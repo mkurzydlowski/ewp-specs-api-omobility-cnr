@@ -28,7 +28,7 @@ Parameters MUST be provided in the `application/x-www-form-urlencoded` format.
 
 ### `mobility_id` (repeatable, required)
 
-A list of IMA identifiers - IDs of Outgoing Mobility objects that were recently
+A list of identifiers of Outgoing Mobility objects that were recently
 updated or created in the caller's EWP Host. Please note, that the sending
 institution MAY (but doesn't have to) send this notification to your EWP Host
 even when it is *your EWP Host* who actually initiated the update (via the
@@ -70,4 +70,4 @@ Servers MUST respond with a valid XML document described by the [response.xsd]
 [echo]: https://github.com/erasmus-without-paper/ewp-specs-api-echo
 [error-handling]: https://github.com/erasmus-without-paper/ewp-specs-architecture#error-handling
 [institutions-api]: https://github.com/erasmus-without-paper/ewp-specs-api-institutions
-[imas-api]: https://github.com/erasmus-without-paper/ewp-specs-api-imas
+[iias-api]: https://github.com/erasmus-without-paper/ewp-specs-api-iias
