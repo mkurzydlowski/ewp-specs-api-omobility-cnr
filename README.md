@@ -63,6 +63,21 @@ Servers MUST respond with a valid XML document described by the [response.xsd]
 (response.xsd) schema. See the schema annotations for further information.
 
 
+Safety measures
+---------------
+
+It is NOT guaranteed that all notifications will be delivered to you promptly.
+Some notifications may also **not reach you at all**, e.g. due to
+implementation errors on the sending institution's server, or the fact that no
+Notification Sender daemon has been implemented there (see
+`<sends-notifications>` element in [Outgoing Mobilities API][mobilities-api]'s
+`manifest-entry.xsd`).
+
+You SHOULD periodically verify if your copies are up-to-date. Proper caching
+techniques and/or periodical use of [Outgoing Mobility Search API]
+[mobility-search-api] can help you with that.
+ 
+
 [develhub]: http://developers.erasmuswithoutpaper.eu/
 [statuses]: https://github.com/erasmus-without-paper/ewp-specs-management#statuses
 [registry-spec]: https://github.com/erasmus-without-paper/ewp-specs-api-registry
@@ -71,3 +86,6 @@ Servers MUST respond with a valid XML document described by the [response.xsd]
 [error-handling]: https://github.com/erasmus-without-paper/ewp-specs-architecture#error-handling
 [institutions-api]: https://github.com/erasmus-without-paper/ewp-specs-api-institutions
 [iias-api]: https://github.com/erasmus-without-paper/ewp-specs-api-iias
+[mobilities-api]: https://github.com/erasmus-without-paper/ewp-specs-api-mobilities
+[mobility-search-api]: https://github.com/erasmus-without-paper/ewp-specs-api-mobility-search
+
