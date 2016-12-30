@@ -13,7 +13,7 @@ implemented by the receiving institution if it wants to be notified whenever
 mobilities kept on their partner institutions' servers are changed.
 
 CNR stands for Change Notification Receiver. For a detailed introduction on how
-CNR APIs work, please read [this page][cnr-intro]. 
+CNR APIs work, please read [this page][cnr-intro].
 
 
 Request method
