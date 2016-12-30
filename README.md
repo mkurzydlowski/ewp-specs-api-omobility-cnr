@@ -10,7 +10,10 @@ Summary
 
 This document describes the **Outgoing Mobility CNR API**. This API is
 implemented by the receiving institution if it wants to be notified whenever
-the sending institution changes a related Outgoing Mobility object.
+mobilities kept on their partner institutions' servers are changed.
+
+CNR stands for Change Notification Receiver. For a detailed introduction on how
+CNR APIs work, please read [this page][cnr-intro]. 
 
 
 Request method
@@ -38,15 +41,14 @@ A list of identifiers of Outgoing Mobility objects (no more than
 `<max-mobility-ids>` items). These are the Mobility objects which have been
 recently updated (or created) on the caller's side. Please note, that the
 sending institution SHOULD send this notification to you even when it is *you*
-who actually initiated the update (via the Outgoing Mobility Remote Update API).
+who actually initiated the update (e.g. via the `update` endpoint of Outgoing
+Mobilities API).
 
 This parameter is *repeatable*, so the request MAY contain multiple occurrences
-of it (which may as well often happen, e.g. when nominations are created in
-bulk). The server SHOULD process all of them.
-
-Server implementers provide their own chosen value of `<max-mobility-ids>` via
-their manifest entry (see [manifest-entry.xsd](manifest-entry.xsd)). Clients
-SHOULD parse this value (or assume it's equal to `1`).
+of it. The server SHOULD process all of them. Server implementers provide their
+own chosen value of `<max-mobility-ids>` via their manifest entry (see
+[manifest-entry.xsd](manifest-entry.xsd)). Clients SHOULD parse this value (or
+assume it's equal to `1`).
 
 
 Permissions
@@ -89,8 +91,8 @@ Notification Sender daemon has been implemented there (see
 
 Therefore, you SHOULD periodically verify if your copies are up-to-date (or,
 simply, choose to *not store* these copies). Proper caching techniques and/or
-periodical use of [Outgoing Mobility Search API][mobility-search-api] can help
-you with that.
+periodical use of `index` endpoint of [Outgoing Mobilities API][mobilities-api]
+can help you with that.
 
 
 [develhub]: http://developers.erasmuswithoutpaper.eu/
@@ -102,5 +104,4 @@ you with that.
 [institutions-api]: https://github.com/erasmus-without-paper/ewp-specs-api-institutions
 [iias-api]: https://github.com/erasmus-without-paper/ewp-specs-api-iias
 [mobilities-api]: https://github.com/erasmus-without-paper/ewp-specs-api-mobilities
-[mobility-search-api]: https://github.com/erasmus-without-paper/ewp-specs-api-mobility-search
-
+[cnr-intro]: https://github.com/erasmus-without-paper/ewp-specs-mobility-flowcharts#notification-senders
