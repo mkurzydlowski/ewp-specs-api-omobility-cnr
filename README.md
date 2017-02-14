@@ -104,4 +104,4 @@ can help you with that.
 [institutions-api]: https://github.com/erasmus-without-paper/ewp-specs-api-institutions
 [iias-api]: https://github.com/erasmus-without-paper/ewp-specs-api-iias
 [mobilities-api]: https://github.com/erasmus-without-paper/ewp-specs-api-mobilities
-[cnr-intro]: https://github.com/erasmus-without-paper/ewp-specs-mobility-flowcharts#notification-senders
+[cnr-intro]: https://github.com/erasmus-without-paper/ewp-specs-architecture#cnr
