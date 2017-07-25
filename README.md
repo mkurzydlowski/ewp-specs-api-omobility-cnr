@@ -51,10 +51,11 @@ own chosen value of `<max-mobility-ids>` via their manifest entry (see
 assume it's equal to `1`).
 
 
-Permissions
------------
+Security
+--------
 
-* Servers SHOULD allow this API to be called by all EWP Hosts in the network.
+For all endpoints of this API, implementers MUST follow the rules described in
+[EWP Authentication and Security, Version 1][sec-v1] document.
 
 
 Handling of invalid parameters
@@ -105,3 +106,4 @@ can help you with that.
 [iias-api]: https://github.com/erasmus-without-paper/ewp-specs-api-iias
 [mobilities-api]: https://github.com/erasmus-without-paper/ewp-specs-api-mobilities
 [cnr-intro]: https://github.com/erasmus-without-paper/ewp-specs-architecture#cnr
+[sec-v1]: https://github.com/erasmus-without-paper/ewp-specs-sec-intro/tree/stable-v1
