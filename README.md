@@ -54,8 +54,15 @@ assume it's equal to `1`).
 Security
 --------
 
-For all endpoints of this API, implementers MUST follow the rules described in
-[EWP Authentication and Security, Version 1][sec-v1] document.
+This version of this API uses [standard EWP Authentication and Security,
+Version 2][sec-v2]. Server implementers choose which security methods they
+support by declaring them in their Manifest API entry.
+
+This API does not expose any sensitive data, it only notifies the server that
+it should reload portions of its data. For this reason, it is RECOMMENDED for
+server implementers to not be overly strict on security methods they require
+(i.e. it is RECOMMENDED to *not* require extra layers of encryption in requests
+and responses - TLS seems more than enough).
 
 
 Handling of invalid parameters
@@ -106,4 +113,4 @@ can help you with that.
 [iias-api]: https://github.com/erasmus-without-paper/ewp-specs-api-iias
 [mobilities-api]: https://github.com/erasmus-without-paper/ewp-specs-api-mobilities
 [cnr-intro]: https://github.com/erasmus-without-paper/ewp-specs-architecture#cnr
-[sec-v1]: https://github.com/erasmus-without-paper/ewp-specs-sec-intro/tree/stable-v1
+[sec-v2]: https://github.com/erasmus-without-paper/ewp-specs-sec-intro/tree/stable-v2
