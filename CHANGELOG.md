@@ -5,6 +5,29 @@ This document describes all the changes made to the *Interinstitutional
 Agreement CNR API* document, starting from its first beta draft version.
 
 
+0.4.0
+-----
+
+Performed a refactoring caused by the planned introduction of the
+Incoming Mobilities API (more information
+[here](https://github.com/erasmus-without-paper/ewp-specs-api-mobilities/issues/27)).
+XML namespaces, element and parameter names were changed.
+
+ * All XML namespaces beginning with
+   `https://github.com/erasmus-without-paper/ewp-specs-api-mobility-cnr/`
+   now begin with
+   `https://github.com/erasmus-without-paper/ewp-specs-api-omobility-cnr/`.
+
+ * In `response.xsd`, the `mobility-cnr-response` element is now named
+   `omobility-cnr-response`.
+
+ * In `manifest-entry.xsd`, the `mobility-cnr` element is now named
+   `omobility-cnr`, and the `max-mobility-ids` element is now named
+   `max-omobility-ids`.
+
+ * The `mobility_id` parameter is now named `omobility_id`.
+
+
 0.3.0
 -----
 
