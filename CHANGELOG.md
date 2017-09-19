@@ -1,8 +1,8 @@
 Release notes
 =============
 
-This document describes all the changes made to the *Interinstitutional
-Agreement CNR API* document, starting from its first beta draft version.
+This document describes all the changes made to the *Outgoing Mobility CNR API*
+document, starting from its first beta draft version.
 
 
 0.4.0
