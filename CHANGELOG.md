@@ -5,6 +5,13 @@ This document describes all the changes made to the *Outgoing Mobility CNR API*
 document, starting from its first beta draft version.
 
 
+0.4.1
+-----
+
+* Added an explanation of what "properly received" means exactly.
+* Fixed typos.
+
+
 0.4.0
 -----
 
