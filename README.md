@@ -39,10 +39,7 @@ which just have been changed.
 
 A list of identifiers of Outgoing Mobility objects (no more than
 `<max-omobility-ids>` items). These are the Mobility objects which have been
-recently updated (or created) on the caller's side. Please note, that the
-sending institution SHOULD send this notification to you even when it is *you*
-who actually initiated the update (e.g. via the `update` endpoint of Outgoing
-Mobilities API).
+recently updated (or created) on the caller's side.
 
 This parameter is *repeatable*, so the request MAY contain multiple occurrences
 of it. The server SHOULD process all of them. Server implementers provide their
