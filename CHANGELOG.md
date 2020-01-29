@@ -5,6 +5,12 @@ This document describes all the changes made to the *Outgoing Mobility CNR API*
 document, starting from its first beta draft version.
 
 
+1.0.0
+-----
+
+* First stable release.
+
+
 0.4.1
 -----
 
