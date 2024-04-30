@@ -29,12 +29,6 @@ Request parameters
 Parameters MUST be provided in the `application/x-www-form-urlencoded` format.
 
 
-### `sending_hei_id` (required)
-
-Identifier of the sending HEI - the master of the Outgoing Mobility objects
-which just have been changed.
-
-
 ### `omobility_id` (repeatable, required)
 
 A list of identifiers of Outgoing Mobility objects (no more than
