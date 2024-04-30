@@ -32,7 +32,7 @@ Parameters MUST be provided in the `application/x-www-form-urlencoded` format.
 ### `omobility_id` (repeatable, required)
 
 A list of identifiers of Outgoing Mobility objects (no more than
-`<max-omobility-ids>` items). These are the Mobility objects which have been
+`<max-omobility-ids>` items). These are the Mobility objects that have been
 recently updated (or created) on the caller's side.
 
 This parameter is *repeatable*, so the request MAY contain multiple occurrences
