@@ -85,8 +85,8 @@ It is NOT guaranteed that all notifications will be delivered to you promptly.
 Some notifications may also **not reach you at all**, e.g. due to
 implementation errors on the sending institution's server.
 
-Therefore, you SHOULD periodically verify if your copies are up-to-date (or,
-simply, choose to *not store* these copies). Proper caching techniques and/or
+Therefore, you SHOULD periodically verify if your copies are up-to-date (or
+choose to *not store* these copies). Proper caching techniques and/or
 periodical use of `index` endpoint of [Outgoing Mobilities API][omobilities-api]
 can help you with that.
 
